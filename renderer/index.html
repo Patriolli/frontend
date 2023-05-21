@@ -11,25 +11,30 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Grammar Correction App</title>
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
   </head>
   <body>
 
-    <h1>Grammar Correction</h1>
-    <div>
+    <div class="container bg-success bg-opacity-75 border border-success p-5 mt-2">
+      <h1 class="text-center mb-3">Grammar Correction</h1>
 
       <form id="form_sentence">
-        <label for="sentence">Sentence:</label><br>
-        <textarea name="sentence" rows="4"></textarea><br>
-        <input type="submit" value="submit"><br>
+        <label class="form-label" for="sentence">Sentence:</label><br>
+        <textarea class="form-control" name="sentence" rows="4"></textarea><br>
+        <div class="d-flex justify-content-center">
+        <input class="btn btn-primary mt-3" type="submit" value="submit"><br>
+        </div>  
       </form>
       <br>
       <div>
-        <label for="sentence_corrected">Corrected sentence:</label><br>
-        <textarea id="sentence_corrected" rows="4" readonly></textarea>
+        <label class="form-label" for="sentence_corrected">Corrected sentence:</label><br>
+        <textarea class="form-control" id="sentence_corrected" rows="4" readonly></textarea>
       </div>
 
     </div>
 
+    <script src="./js/bootstrap/bootstrap.bundle.min.js" ></script>
   </body>
   <script src="./js/renderer.js"></script>
 </html>
