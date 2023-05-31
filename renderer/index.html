@@ -2,39 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>Grammar Correction App</title>
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>Micro Horror Story Creator</title>
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-
-    <div class="container bg-success bg-opacity-75 border border-success p-5 mt-2">
-      <h1 class="text-center mb-3">Grammar Correction</h1>
+  <body class="container bgGradient">
+    <div class="bg-light bg-opacity-25 p-5 mt-2 rounded box">
+      <h2 class="text-center text-black mb-3">MICRO HORROR STORY CREATOR</h2>
 
       <form id="form_sentence">
-        <label class="form-label" for="sentence">Sentence:</label><br>
-        <textarea class="form-control" name="sentence" rows="4"></textarea><br>
+        <div>
+          <textarea class="form-control mb-2 StoryContent" id="sentence_corrected" placeholder="Story" readonly></textarea>
+        </div>
+        <input class="form-control" id="pills-text-tab" name="sentence" rows="1" placeholder="Topic" /><br />
         <div class="d-flex justify-content-center">
-        <input class="btn btn-primary mt-3" type="submit" value="submit"><br>
-        </div>  
+          <input class="btn btn-primary mt-3" type="submit" value="Generate Story" />
+        </div>
       </form>
-      <br>
-      <div>
-        <label class="form-label" for="sentence_corrected">Corrected sentence:</label><br>
-        <textarea class="form-control" id="sentence_corrected" rows="4" readonly></textarea>
-      </div>
-
     </div>
-
-    <script src="./js/bootstrap/bootstrap.bundle.min.js" ></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/renderer.js"></script>
   </body>
-  <script src="./js/renderer.js"></script>
 </html>

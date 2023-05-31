@@ -1,0 +1,22 @@
+.box{
+    background-image: linear-gradient(#42403d, #7a9d90, #c3d5db, #caccbe, #bc5642);
+}
+.StoryContent{
+    width: 100%;
+    height: 30vh;
+}
+.h2Gradient{
+    background: -webkit-linear-gradient(red #42403d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bgGradient{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containerS{
+    width: 512px;
+    height: 30vh;
+}
